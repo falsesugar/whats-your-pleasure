@@ -1,2 +1,2 @@
 # whats-your-pleasure
-https://whatsyourpleasure.vercel.app/
+https://whatsyourpleasure.co/
