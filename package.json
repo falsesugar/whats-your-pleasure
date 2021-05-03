@@ -1,7 +1,7 @@
 {
-  "name": "whats-your-pleasure-website-v1",
+  "name": "whats-your-pleasure-main",
   "version": "1.0.0",
-  "description": "",
+  "description": "Main github repo file",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
