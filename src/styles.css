@@ -55,20 +55,21 @@ a {
 }
 
 #sidebar {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  height: 100%;
   width: 100px;
   z-index: 2;
   top: 3%;
-  left: 85%;
+  left: 87%;
 }
 
 .icons {
-  width: 100px;
+  width: 80px;
 }
 
 .icon-button {
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 #sidebar button {
@@ -87,12 +88,6 @@ a {
 #sidebar button:active {
   opacity: 0.5;
   transform: scale(1.025);
-}
-
-#popup-coming-soon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #popup-build-guide {
@@ -152,6 +147,35 @@ a {
   width: 100%;
   top: 0px;
   left: 40px;
+}
+
+#popup-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-internal-box {
+  z-index: 4;
+  background-color: #fcd1ef;
+  top: 22%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 985px;
+  height: 545px;
+  overflow: auto;
+}
+
+#about-text {
+  z-index: 6;
+  position: absolute;
+  max-width: 800px;
+  width: 100%;
+  top: 100%;
+  left: 80px;
 }
 
 .letter {
@@ -216,6 +240,40 @@ a {
   max-width: 1000px; /*actual image width*/
   height: auto; /* maintain aspect ratio*/
   margin: auto; /*optional centering of image*/
+}
+
+.imgwrap4 {
+  z-index: 7;
+  position: absolute;
+  width: 100%; /*or whatever you choose*/
+  margin: auto;
+}
+
+.imgwrap4 img {
+  display: block;
+  width: 85%;
+  max-width: 600px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+  margin: auto; /*optional centering of image*/
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.imgwrap5 {
+  z-index: 7;
+  position: absolute;
+  width: 100%; /*or whatever you choose*/
+  margin: auto;
+}
+
+.imgwrap5 img {
+  display: block;
+  width: 85%;
+  max-width: 600px; /*actual image width*/
+  height: auto; /* maintain aspect ratio*/
+  margin: auto; /*optional centering of image*/
+  margin-top: 25px;
+  margin-bottom: 35px;
 }
 
 .color-code {
@@ -287,17 +345,34 @@ a {
     overflow: auto;
   }
 
+  #about-internal-box {
+    z-index: 4;
+    background-color: #fcd1ef;
+    top: 18%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    height: 50%;
+    width: 85%;
+    max-height: 445px;
+    overflow: auto;
+  }
+
   #sidebar {
     position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     z-index: 2;
     left: 0;
   }
 
   .icons {
-    width: 80px;
+    width: 60px;
   }
 
   .icon-button {
@@ -306,7 +381,7 @@ a {
   }
 
   #sidebar button {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .imgwrap3 {
@@ -402,12 +477,46 @@ a {
     left: 25px;
   }
 
+  #about-internal-box {
+    top: 20%;
+    width: 94%;
+    max-width: 499px;
+    height: 62%;
+    max-height: 600px;
+    overflow: auto;
+  }
+
+  #about-text {
+    z-index: 6;
+    position: absolute;
+    max-width: 499px;
+    width: 90%;
+    top: 53%;
+    left: 25px;
+  }
+
   .imgwrap3 {
     z-index: 7;
     position: absolute;
     width: 100%; /*or whatever you choose*/
     top: 350%;
     margin: auto;
+  }
+
+  .imgwrap5 {
+    z-index: 7;
+    position: absolute;
+    width: 100%; /*or whatever you choose*/
+    margin: auto;
+    top: 30px;
+  }
+
+  .imgwrap5 img {
+    display: block;
+    width: 85%;
+    max-width: 600px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
   }
 
   .desc-title {
