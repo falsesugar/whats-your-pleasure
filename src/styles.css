@@ -178,6 +178,16 @@ a {
   left: 80px;
 }
 
+#popupgame,
+iframe {
+  margin: 0 auto;
+}
+
+#iframe3 {
+  display: block;
+  border-style: none;
+}
+
 .letter {
   margin-top: 50px;
 }
@@ -366,9 +376,9 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
+    width: 97%;
     z-index: 2;
-    left: 0;
+    left: 5px;
   }
 
   .icons {
@@ -402,6 +412,10 @@ a {
   .desc-text {
     line-height: 28px;
     font-size: 20px;
+  }
+
+  #roadmap-desktop-only {
+    display: none;
   }
 }
 
